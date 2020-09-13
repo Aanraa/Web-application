@@ -1,2 +1,2 @@
 # Web-application
-Lab1
+Lab
