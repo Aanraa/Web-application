@@ -1,14 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dynamic from './components/dynamic/Dynamic';
-import Header from './components/header/Header';
+import './styles/main.css';
 
+import Example from "./components/example/Example"
+import States from "./components/states/States"
+
+
+
+class P4 extends React.Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            which:true
+        }
+    }
+    render() {
+        return (
+            <React.Fragment><div className="Switcher"><div className="clickMe" onClick={() => {
+                    this.setState({which:!this.state.which})
+                }}>Switch to {this.state.which?"Example":"States"}</div></div>
+                
+                {this.state.which?<States/>:<Example/>}
+            </React.Fragment>
+        )
+    }
+}
 
 ReactDOM.render(
-    <div>
-      <Header />
-      <Dynamic />
-    </div>,
-    
-    document.getElementById('reactapp'),
-  );
+  <P4/>,
+  document.getElementById('reactapp'),
+);

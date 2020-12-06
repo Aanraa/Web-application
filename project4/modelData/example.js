@@ -16,7 +16,9 @@ if (cs142models === undefined) {
 
 cs142models.exampleModel = function() {
    return {
-      name: 'Anar'
+      name: 'Anar',
+      motto: "Do not pretend like any others"
+
    };
 };
 

@@ -4,3 +4,28 @@ CSS for the CS142 project #4 Problem #2 states component
 Since CSS uses a global name space for classes we should use names starting with
 cs142-states- here.
 */
+
+.cs-142-states-container {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-top: 5%;
+   
+
+}
+
+#cs-142-states-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    
+}
+
+#cs-142-states-filterInput {
+    height: 40px;
+    width: 50%;
+    font-size: 20pt;
+    margin-left: 50px;
+    margin: auto;
+  border: 3px solid rgb(218, 240, 23);
+  padding: 10px;
+}
