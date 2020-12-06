@@ -111,8 +111,8 @@ class Example extends React.Component {
         <h1>CS142 Project#4 React.js Example</h1>
 
         <div className="motto-update">
-          <p>My name is "{this.state.name}"</p>
-          <p>My name is "{this.state.motto}"</p>
+          <p>My name is &ldquo; {this.state.name} &rdquo;.</p>
+          <p>My name is &ldquo; {this.state.motto} &rdquo;.</p>
           <div className = "cs142-example-output">
           <label htmlFor="inId">Input Field: </label>
 <input type="text" value={this.state.motto} onChange={this.handleChangeBound2} /></div>
